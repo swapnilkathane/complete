@@ -1,0 +1,7 @@
+{% extends 'main/header.html' %}
+ {% block content %}
+        <h1> Welcome to portal {{user.username}}</h1>
+        {% for tut in tutorials %}
+           {{tut.tutorial_title}}
+        {% endfor %}
+ {% endblock %}
